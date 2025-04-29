@@ -1097,7 +1097,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-family: "montserrat-regular", sans-serif;
     font-weight: bold;
     border: none;
-    color: #000000;
+    color: #ffffff;
 }
 
 .stats-tabs li a:hover {
@@ -1242,7 +1242,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .subhead {
     font-family: "montserrat-bold", sans-serif;
-    font-size: 1.7rem;
+    font-size: 2.7rem;
     line-height: 1.333;
     text-transform: uppercase;
     letter-spacing: .25rem;
@@ -1252,7 +1252,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .subhead--dark {
-    color: #000000;
+    color: #ffffff;
 }
 
 
@@ -1488,7 +1488,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
@@ -2200,8 +2200,8 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #ff2c07;
-    color: #010507;
+    background-color: #48729c;
+    color: #ffffff;
     position: relative;
 }
 
@@ -2215,6 +2215,51 @@ html.no-csstransitions .home-content__main {
     text-align: center;
     max-width: 1024px;
 }
+
+.s-about2 {
+    padding-top: 16.2rem;
+    padding-bottom: 9rem;
+    background-color: #163758;
+    color: #ffffff;
+    position: relative;
+}
+
+.s-about2 .section-header.has-bottom-sep::before {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.about-desc2 {
+    font-size: 2.4rem;
+    line-height: 1.75;
+    text-align: center;
+    max-width: 1024px;
+}
+
+.s-about3 {
+    padding-top: 16.2rem;
+    padding-bottom: 9rem;
+    background-color: #1366b9;
+    color: #ffffff;
+    position: relative;
+}
+
+.s-about3 .section-header.has-bottom-sep::before {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.about-desc3 {
+    font-size: 2.4rem;
+    line-height: 1.75;
+    text-align: center;
+    max-width: 1024px;
+}
+
+
+
+
+
+
+
 
 
 /* ------------------------------------------------------------------- 
@@ -2251,7 +2296,7 @@ html.no-csstransitions .home-content__main {
 .stats h5 {
     font-family: "montserrat-semibold", sans-serif;
     margin-top: 1.8rem;
-    color: #000000;
+    color: #ffffff;
     font-size: 1.8rem;
     line-height: 1.333;
     position: relative;
