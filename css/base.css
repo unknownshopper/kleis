@@ -43,7 +43,7 @@
  *
  * ------------------------------------------------------------------- */
 html {
-    font-family: sans-serif;
+    font-family: "Ubuntu";
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -84,7 +84,7 @@ hr {
 }
 
 pre {
-    font-family: monospace, monospace;
+    font-family: "Ubuntu";
     font-size: 1em;
 }
 
@@ -117,7 +117,7 @@ strong {
 code,
 kbd,
 samp {
-    font-family: monospace, monospace;
+    font-family: "Ubuntu";
     font-size: 1em;
 }
 
@@ -173,7 +173,7 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: sans-serif;
+    font-family: "Ubuntu";
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
@@ -194,6 +194,7 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
     -webkit-appearance: button;
+    appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -248,6 +249,7 @@ textarea {
 
 [type="search"] {
     -webkit-appearance: textfield;
+    appearance: textfield;
     outline-offset: -2px;
 }
 
@@ -258,6 +260,7 @@ textarea {
 
 ::-webkit-file-upload-button {
     -webkit-appearance: button;
+    appearance: button;
     font: inherit;
 }
 
