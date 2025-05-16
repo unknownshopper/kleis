@@ -28,6 +28,7 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+    <script src="js/video-speed.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -106,7 +107,11 @@
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home target-section video-background">
+        <video autoplay loop muted playsinline class="video-bg" playbackrate="0.5">
+            <source src="images/vids/ciberseguridad.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
 
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
@@ -167,6 +172,9 @@
     <!-- about
     ================================================== -->
     <section id='about' class="s-about">
+
+        <!-- <div class="overlay"></div>
+        <div class="shadow-overlay"></div> -->
 
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
@@ -237,7 +245,7 @@
             <div class="col-block service-item" data-aos="fade-up">
                 
                 <div class="service-text">
-                    <h3 class="h2">Ciberseguridad gestionada:</h3>
+                    <h3 class="h2">Ciberseguridad gestionada</h3>
                     <p>Proveemos estrategias integrales de ciberseguridad que combinan monitoreo continuo, detección avanzada de amenazas y respuestas automatizadas. Nuestro enfoque asegura la protección de tus datos y operaciones frente a los riesgos actuales.
                     </p>
                 </div>
@@ -246,7 +254,7 @@
             <div class="col-block service-item" data-aos="fade-up">
                 
                 <div class="service-text">
-                    <h3 class="h2">Inteligencia artificial y analítica avanzada:</h3>
+                    <h3 class="h2">Inteligencia artificial y analítica avanzada</h3>
                     <p>Transformamos datos en información estratégica mediante soluciones de inteligencia artificial y analítica avanzada. Ayudamos a las empresas a anticipar tendencias, optimizar procesos y tomar decisiones basadas en información precisa.
                     </p>
                 </div>
@@ -255,7 +263,7 @@
             <div class="col-block service-item" data-aos="fade-up">
                 
                 <div class="service-text">
-                    <h3 class="h2">Soluciones en la nube:</h3>
+                    <h3 class="h2">Soluciones en la nube</h3>
                     <p> Diseñamos arquitecturas cloud personalizadas que ofrecen flexibilidad, escalabilidad y seguridad. Ya sea a través de entornos públicos, privados o híbridos, nuestras soluciones permiten a las organizaciones adaptarse rápidamente a las demandas del mercado.
                     </p>
                 </div>
