@@ -2244,10 +2244,15 @@ html.no-csstransitions .home-content__main {
 }
 
 .about-desc {
-    font-size: 2.4rem;
-    line-height: 1.75;
-    text-align: center;
+    font-size: 2.1rem;
+    line-height: 1.8;
+    text-align: left;
     max-width: 1024px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(22, 55, 88, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .s-about2 {
