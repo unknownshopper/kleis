@@ -1,55 +1,38 @@
 document.addEventListener('DOMContentLoaded', function() {
     const video = document.querySelector('.video-bg');
+    
     if (video) {
-        let isReverse = true;
-        let lastTime = video.duration;
+        // Configuración básica de video
+        video.addEventListener('loadedmetadata', () => {
+            console.log('Video metadata loaded');
+            video.play();
+        });
 
-        // Función para reproducir en reversa
-        function playReverse() {
-            console.log('Attempting to play in reverse');
-            video.pause();
-            video.currentTime = video.duration;
-            isReverse = true;
-
-            // Simular reproducción en reversa manualmente
-            function reversePlayback() {
-                if (isReverse && video.currentTime > 0) {
-                    video.currentTime -= 0.05; // Ajusta esta velocidad según sea necesario
-                    requestAnimationFrame(reversePlayback);
-                } else if (video.currentTime <= 0) {
-                    playForward();
-                }
-            }
-
-            reversePlayback();
-        }
-
-        // Función para reproducir hacia adelante
-        function playForward() {
-            console.log('Attempting to play forward');
-            video.pause();
+        // Manejo de eventos
+        video.addEventListener('ended', () => {
             video.currentTime = 0;
-            isReverse = false;
+            video.play();
+        });
 
-            // Simular reproducción hacia adelante manualmente
-            function forwardPlayback() {
-                if (!isReverse && video.currentTime < video.duration) {
-                    video.currentTime += 0.05; // Ajusta esta velocidad según sea necesario
-                    requestAnimationFrame(forwardPlayback);
-                } else if (video.currentTime >= video.duration) {
-                    playReverse();
-                }
-            }
+        // Control de velocidad
+        const speedLevels = [0.25, 0.5, 0.75, 1, 1.25, 1.5, 2];
+        let currentSpeedIndex = 2; // Índice para velocidad normal (1x)
 
-            forwardPlayback();
+        function changePlaybackSpeed() {
+            currentSpeedIndex = (currentSpeedIndex + 1) % speedLevels.length;
+            video.playbackRate = speedLevels[currentSpeedIndex];
+            console.log(`Velocidad de reproducción: ${speedLevels[currentSpeedIndex]}x`);
         }
 
-        // Comenzar en reversa
-        playReverse();
+        // Establecer velocidad inicial
+        video.playbackRate = speedLevels[currentSpeedIndex];
 
-        // Error handling
-        video.addEventListener('error', function(e) {
-            console.error('Video error:', e);
+        // Añadir evento de cambio de velocidad (por ejemplo, doble clic)
+        video.addEventListener('dblclick', changePlaybackSpeed);
+
+        // Manejo de errores
+        video.addEventListener('error', (e) => {
+            console.error('Error en la reproducción del video:', e);
         });
 
         console.log('Video-speed script loaded');
