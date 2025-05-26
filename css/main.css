@@ -2220,7 +2220,7 @@ html.no-csstransitions .home-content__main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 .s-about::before {
