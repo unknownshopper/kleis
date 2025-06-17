@@ -21,12 +21,12 @@
  *  # buttons
  *  # additional components
  *      ## alert box
- *      ## additional typo styles
+ *      ## additional typo styles 
  *      ## skillbars 
  *  # reusable and common theme styles
  *      ## display headings
  *      ## section header
- *      ## slick slider
+ *      ## slick slider 
  *  # header styles
  *      ## header logo
  *      ## main navigation 
@@ -2507,8 +2507,7 @@ html.no-csstransitions .home-content__main {
 
 
 /* ------------------------------------------------------------------- 
- * ## services list max-width: 100%;
-    height: auto;
+ * ## services list
  * ------------------------------------------------------------------- */
 .services-list {
     margin-top: 6rem;
@@ -3785,3 +3784,152 @@ footer .row {
 
 
 /*# sourceMappingURL=main.css.map */
+
+
+/* ===================================================================
+ * # privacy notice
+ *
+ * ------------------------------------------------------------------- */
+.privacy-notice {
+    padding: 2.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.privacy-notice .main-title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.privacy-notice .company-name {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+}
+
+.privacy-notice .intro-text {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.privacy-section {
+    margin-bottom: 2rem;
+}
+
+.privacy-section .section-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: 600;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 0.5rem;
+}
+
+.privacy-section p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.privacy-list {
+    list-style: disc;
+    padding-left: 2rem;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.privacy-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.contact-info {
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+.contact-info a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.last-update {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    font-style: italic;
+    text-align: right;
+    color: #666;
+    border-top: 1px solid #eaeaea;
+    padding-top: 1rem;
+}
+
+/* ===================================================================
+ * # Estilos para la página de agradecimiento
+ *
+ * ------------------------------------------------------------------- */
+.message-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 3px;
+    padding: 4rem 3rem;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.message-box p {
+    color: #333333;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.message-box .btn-wrap {
+    margin-top: 3rem;
+}
+
+.message-box .btn {
+    margin: 0 0.5rem;
+}
+
+/* ===================================================================
+ * # Media Queries para la página de agradecimiento
+ *
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 800px) {
+    .message-box {
+        padding: 3rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .message-box {
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .message-box p {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .message-box {
+        padding: 2rem 1rem;
+    }
+    
+    .message-box p {
+        font-size: 1.5rem;
+    }
+}

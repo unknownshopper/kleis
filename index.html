@@ -31,7 +31,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <meta property="og:image" content="https://kleis.com.mx/images/logic.png"`>
+    <meta property="og:image" content="https://kleis.com.mx/images/logic.png">
     <meta property="og:locale" content="es_MX" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Kleis Solutions" />
@@ -174,20 +174,28 @@
 
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead subhead--dark">Hola!!</h3>
+                <h3 class="subhead subhead--dark">-</h3>
                 <h1 class="display-1 display-1--light">Kleis Solutions</h1>
             </div>
         </div> <!-- end section-header -->
 
         <div class="row about-desc" data-aos="fade-up">
             <div class="col-full">
-                <p>
+                <!-- <p>
                      
-                    Actualmente representamos a empresas líderes en el mercado tecnológico y cumplimos con estándares de certificaciones técnicas  que nos permiten ofrecer soluciones a las necesidades de su empresa.<br><br>
-                    
-                    Nuestro personal cuenta con experiencia profesional de mas de 10 años en el área de gestión de sistemas, especialmente en protección de datos, respaldos, monitoreo, automatización y gestión de infraestructura.<br><br>
-                    
-                    Tenemos experiencia en el mercado mexicano, en varios sectores de industria, tales como el de Telecomunicaciones, Banca Privada y Pública, Educación e Investigación, Transporte y Alimentos.<br>
+                    Actualmente representamos a empresas líderes en el mercado tecnológico y cumplimos con estándares de certificaciones técnicas  que nos permiten ofrecer soluciones a las necesidades de su empresa.
+                </p>
+                <p>
+                    Nuestro personal cuenta con experiencia profesional de mas de 10 años en el área de gestión de sistemas, especialmente en protección de datos, respaldos, monitoreo, automatización y gestión de infraestructura.
+                </p>
+                <p>
+                    Tenemos experiencia en el mercado mexicano, en varios sectores de industria, tales como el de Telecomunicaciones, Banca Privada y Pública, Educación e Investigación, Transporte y Alimentos.
+                </p> -->
+                <p>
+                    Nuestro personal cuenta con 10 años de experiencia profesional en el área de gestión de sistemas, especialmente en protección de datos, respaldos, monitoreo, automatización y gestión de infraestructura
+                </p>
+                <p>
+                    Contamos con amplia experiencia en el mercado mexicano, participando en diversos sectores industriales como telecomunicaciones, banca (privada y pública) educación e investigación, transporte y alimentos.
                 </p>
             </div>
         </div> <!-- end about-desc -->
@@ -544,35 +552,37 @@
             </div>
         </div>
 
-        <!-- <div class="row contact-content" data-aos="fade-up">
+        <div class="row contact-content" data-aos="fade-up">
  
-           <div class="contact-primary">
+           <div>
 
                 <h3 class="h6">Envíe un mensaje</h3>
 
-                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                <form name="contactForm" id="contactForm" method="POST" action="https://formspree.io/f/xgegpvvq" novalidate="novalidate">
                     <fieldset>
     
                     <div class="form-field">
-                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                        <input name="name" type="text" id="contactName" placeholder="Su nombre" value="" minlength="2" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
-                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                        <input name="email" type="email" id="contactEmail" placeholder="Su correo" value="" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
-                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                        <input name="subject" type="text" id="contactSubject" placeholder="Asunto" value="" class="full-width">
                     </div>
                     <div class="form-field">
-                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                        <textarea name="message" id="contactMessage" placeholder="Su mensaje" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
                     </div>
+                    <!-- Campos ocultos para configuración adicional de Formspree -->
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde el sitio web de Kleis">
+                    <input type="hidden" name="_next" value="https://www.kleis.com.mx/gracias.html">
                     <div class="form-field">
-                        <button class="full-width btn--primary">Submit</button>
+                        <button type="submit" class="full-width btn--primary">Enviar</button>
                         <div class="submit-loader">
-                            <div class="text-loader">Sending...</div>
+                            <div class="text-loader">Enviando...</div>
                             <div class="s-loader">
                                 <div class="bounce1"></div>
-                                <div class="bounce2"></div>
-                                <div class="bounce3"></div>
+
                             </div>
                         </div>
                     </div>
@@ -590,7 +600,7 @@
 
             </div>
 
-            <div class="contact-secondary"> 
+            <!-- <div class="contact-secondary"> 
                 <div class="contact-info">
 
                     <h3 class="h6 hide-on-fullwidth">Contacto</h3>
@@ -633,7 +643,7 @@
                     </ul> 
 
                 </div> 
-            </div>
+            </div> -->
 
         </div> -->
 
@@ -679,7 +689,7 @@
 
             <div class="col-twelve">
                 <div class="copyright">
-                    <span>Copyright © 2025 | Kleis Solutions </span> 
+                    <span>Copyright 2025 | Kleis Solutions </span> 
                 </div>
                 <div class="copyright">
                    <a href="aviso.html"> <span>Aviso Términos de Privacidad </span> </a> 
